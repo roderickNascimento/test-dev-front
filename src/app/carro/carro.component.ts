@@ -92,8 +92,9 @@ export class CarroComponent implements OnInit, OnDestroy {
   viewCarro(id= null) {
     this.actionModal();
     if (id) {
-      console.log(id);
-      this.getCarro(id);
+       this.getCarro(id);
+    } else {
+      this.newCarroForm.reset();
     }
 
   }

@@ -3,7 +3,7 @@
     <div class="col-10">
       <div class="card">
         <div class="card-body">
-          <button class="btn btn-primary mb-3" (click)="actionModal()">Adicionar novo</button>
+          <button class="btn btn-add btn-primary mb-3" (click)="viewCarro()">Adicionar novo</button>
           <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="table table-hover">
             <thead>
                 <tr>
@@ -69,7 +69,7 @@
                 <div class="col-md-3">
                   <div class="form-group">
                     <label>Ano:</label>
-                     <input id="name" type="text" formControlName="ano" class="form-control" placeholder="2020"
+                     <input id="name" type="text" formControlName="ano" class="form-control" placeholder="ex:2020"
                       autocomplete="off" required>
                   </div>
                 </div>
